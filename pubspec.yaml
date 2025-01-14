@@ -10,7 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_modular: ^6.3.4
-
+  core:
+    git:
+      url: "https://github.com/nhatanh100304/core"
+      ref: "main"
 
 dev_dependencies:
   flutter_test:

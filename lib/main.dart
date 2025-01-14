@@ -1,3 +1,4 @@
+import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -12,7 +13,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'My Smart App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: appTheme,
       routerConfig: Modular.routerConfig,
     ); //added by extension
   }
@@ -56,7 +57,12 @@ class SecondPage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () => Modular.to.navigate('/'),
-          child: const Text('Back to Home'),
+          child: const Text('DA THAY DOI',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.normal,
+              color: Colours.text,
+            ),),
         ),
       ),
     );
